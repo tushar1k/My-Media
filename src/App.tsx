@@ -1,9 +1,20 @@
-import React from "react"
+import { Routes, Route, Navigate } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import FeedPage from "./pages/FeedPage";
+import UploadPage from "./pages/UploadPage";
 
-const App = () => {
+function App() {
   return (
-    <div>App</div>
-  )
+    <>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Navigate to="/feed" />} />
+        <Route path="/feed" element={<FeedPage />} />
+        <Route path="/upload" element={<UploadPage />} />
+      </Routes>
+    </>
+  );
 }
 
-export default App
+export default App;
