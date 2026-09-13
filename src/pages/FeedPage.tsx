@@ -5,13 +5,13 @@ import { type PostData } from "../types/postData";
 const dummyPosts: PostData[] = [
   {
     id: "1",
-    caption: "My first photo 🌄",
+    caption: "My first photo",
     imageURL: "https://picsum.photos/400/300",
     createAt: new Date().toISOString(),
   },
   {
     id: "2",
-    caption: "Coffee time ☕",
+    caption: "Coffee time",
     imageURL: "https://picsum.photos/400/301",
     createAt: new Date().toISOString(),
   },
